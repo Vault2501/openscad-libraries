@@ -18,15 +18,15 @@ Example:
 Module to create a screwed case based on the inside dimensions
 
 Usage:
-'case(render,dim_inside=,dia_screws,wall,height_top,gap=0.3,mki=5)
+'case(render,dim_inside=,dia_screws,wall,height_top,gap=0.3,mki=5)`
 
-render: all,top, bottom
-dim_inside: dimension of the object that should fit inside
-dia_screws: diameter of screws to be used
-wall: wall thickness
-height_top: height of the lid
-gap: gap for better fitting lid on bottom
-mki: roundness of the case 
+**render**: all,top, bottom<br>
+**dim_inside**: dimension of the object that should fit inside<br>
+**dia_screws**: diameter of screws to be used<br>
+**wall**: wall thickness<br>
+**height_top**: height of the lid<br>
+**gap**: gap for better fitting lid on bottom<br>
+**mki**: roundness of the case<br>
 
 Example:
 ```
