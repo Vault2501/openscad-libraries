@@ -26,10 +26,10 @@ module case(render="all",
     
     if(render=="top" || render=="all")
     {
-        translate([0,-10,dim_outside[2]])
-        {
-            rotate([180,0,0])
-            {
+        //translate([0,-10,dim_outside[2]])
+        //{
+        //    rotate([180,0,0])
+        //    {
                 // cut away lower part from case
                 difference()
                 {
@@ -44,8 +44,8 @@ module case(render="all",
                     dim_outside[1],
                     height_bottom-wall+gap]);
                 }
-            }
-        }
+        //   }
+        //}
     }
     
     if(render=="bottom" || render=="all")
