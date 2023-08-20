@@ -35,6 +35,7 @@ module case(render="all",
                 {
                     cube_round(dim_outside,mki=mki);
                     cutout_top();
+                    cutout_screws();
                 }
                 difference()
                 {
@@ -54,6 +55,7 @@ module case(render="all",
         {
             cube_round(dim_outside,mki=mki);
             cutout_bottom();
+            cutout_screws();
         }
         // add screw hull
         difference()
@@ -144,7 +146,7 @@ module case(render="all",
             }
             translate([wall-gap,wall-gap,0])
             {
-                #cube_round([dim_outside[0]-2*wall+2*gap,
+                cube_round([dim_outside[0]-2*wall+2*gap,
                             dim_outside[1]-2*wall+2*gap,
                             dim_outside[2]],mki_inside);
             }
